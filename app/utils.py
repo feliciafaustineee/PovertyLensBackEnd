@@ -62,7 +62,16 @@ def get_region(name):
     "kualitas_hidup": {
         "sanitasi": float(row["Persentase rumah tangga yang memiliki akses terhadap sanitasi layak"]),
         "air_minum": float(row["Persentase rumah tangga yang memiliki akses terhadap air minum layak"])
-    }
+    },
+
+    "kemiskinan": round(float(row["Persentase Penduduk Miskin (P0) Menurut Kabupaten/Kota (Persen)"]), 2),
+
+    # Nilai scaled (z-score) — ditampilkan sebagai skor relatif
+    "ipm":               round(float(row["Indeks Pembangunan Manusia"]), 2),
+    "umur_harapan_hidup": round(float(row["Umur Harapan Hidup (Tahun)"]), 2),
+    "pengangguran":       round(float(row["Tingkat Pengangguran Terbuka"]), 2),
+    "pdrb":               round(float(row["PDRB atas Dasar Harga Konstan menurut Pengeluaran (Rupiah)"]), 2),
+    
 }
 
 def search_region(query):
