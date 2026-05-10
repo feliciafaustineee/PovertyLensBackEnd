@@ -66,7 +66,6 @@ def get_region(name):
 
     "kemiskinan": round(float(row["Persentase Penduduk Miskin (P0) Menurut Kabupaten/Kota (Persen)"]), 2),
 
-    # Nilai scaled (z-score) — ditampilkan sebagai skor relatif
     "ipm":               round(float(row["Indeks Pembangunan Manusia"]), 2),
     "umur_harapan_hidup": round(float(row["Umur Harapan Hidup (Tahun)"]), 2),
     "pengangguran":       round(float(row["Tingkat Pengangguran Terbuka"]), 2),
