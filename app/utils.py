@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data/data_with_cluster.csv")
+df = pd.read_csv("data/data_with_cluster (2).csv")
 
 df["Provinsi"] = df["Provinsi"].str.lower().str.strip()
 df["Kab/Kota"] = df["Kab/Kota"].str.lower().str.strip()
